@@ -1,0 +1,464 @@
+/*///////////////////////////////////////////////////////////////////////////////
+//                                      Header Barra menu                      //
+///////////////////////////////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{    
+    font-size: 16px;
+    font-family: 'fontTitles';      
+}
+header{    
+    width: 100%;
+    height: 37px;
+    margin-top: 22px;
+    background: #2c4295;
+    position: relative; /*chages here relative*/
+    z-index: 9999;
+}
+#contenedorLogo{
+    position: relative;
+    background: white; /*withe*/
+    box-shadow: inset;
+    top: -30px;
+    width: 194px; /*Los pixeles del tamaño real son 194*/    
+    margin-left: 32.504px;
+    border-radius: 0px 0px 25px 25px;  
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    height: 85px;    
+}
+header h1 >*{
+    display: inline-block;
+    vertical-align: middle;        
+    margin: 0px 3px;        
+}   
+header h1 figure{   /*Pocision del logo noe y tama;o*/  
+    position: relative;
+    top: 0px;
+    left: 0px;
+    line-height: 90px;
+    height: 56.333px;
+    width: 46.333px;
+    margin: 0px;       
+}
+header h1 figure img{     
+    position: absolute;   
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    width: 100%;
+    margin-left: 23px;
+    margin-top: 13.75px;    
+    max-width: 75px;
+}
+header #contenedorLogo > *{            
+    margin: 0px 0px 0px 0px;
+    display: inline-block;                        
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}      
+.letrasLogo{   
+    position: relative;      
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: -100px;
+    right: -115px;
+}    
+header .letrasLogo > *{ 
+    margin-top: 0px;            
+    margin: 0px 0px 0px 0px;
+    display: table;                        
+    vertical-align: middle;
+    text-decoration: none;     
+}  
+header .letrasLogo :nth-child(1){            
+    position: absolute;
+    font-family: 'fontLogo';
+    color: #2c4295;
+    font-size: 60px;            
+    top: -4px;
+    letter-spacing: -1px;
+    left: -2px;   
+    font-weight: normal;            
+}
+header .letrasLogo :nth-child(2){                
+    position: relative;
+    color: #2c4295;
+    font-size: 9px;
+    font-family:'fontCofe';
+    font-weight: normal;
+    letter-spacing: 0.14px;
+    top: 1.8px;
+    right: 2.5px;
+}
+header nav .ioMenuMovil{    
+    position: absolute;
+    top: 0px; /*Esto es lo que modifica el top del icono menu*/    
+    height: 30px;
+    width: 30px;/* ///////////////////////////////*/
+    cursor: pointer;
+    line-height: 50px;
+    margin: 0px 0px 0px 0px;
+    margin-left: 89%;
+    }
+    #hideMenu{
+        /* position: flex; */
+        position: absolute;
+        margin-left: 70.2%;       
+        top: -36px;
+    } 
+    header nav .ioMenuMovil span{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    }
+    header nav #cardmenu{
+        /*Especificaciones de carta movil*/
+        display: none; /*Prender apagar*//* * * * * * * * * * * * * * * * */
+        position: absolute; 
+        height: 300px;
+        width: 35%;
+        top: 37px;        
+        background: #00A4C4;
+        left: 0px;
+        border-right: 3px solid #F1A600;
+        z-index: 1000;
+        padding-bottom: 50px;   
+        margin-left: 65%;        
+    }  
+    header nav #cardmenu #logo_menumovil img{
+    width: 100%;
+    }
+    header nav #cardmenu ul{  
+        margin-top: 0px;
+        list-style: none;
+        font-size: 1.1em;
+        line-height: 55px;
+    }
+    header nav #cardmenu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    header nav #cardmenu ul li a:hover{
+        border-bottom: 3px solid #F1A600;
+    }    
+    header #Usuario,
+    header #Carrito,
+    header #Busqueda
+    {
+        position: absolute;
+        text-align: center;
+        width: 45px;
+        height: 45px;    
+        cursor: pointer;   
+        margin: 5px 15px;
+        z-index: 9999;
+        overflow: hidden;
+        top: 15px; 
+    }
+    header #Busqueda{   
+        top: -8px;
+        margin-left: 68%;            
+    }
+    header #Usuario{
+        top: -8px;
+        margin-left: 78%;        
+    }  
+    .redesSociales{
+        display: none;
+    }
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                              #Carrito  "!#!"#%&%&/&%/&(/(&/(&(/)$%&$%%&$                                     //
+    /////////////////////////////////////////////////////////////////////////////// */
+    
+    header #Usuario span, 
+    header #Busqueda span
+    {           
+        display: table;  
+        margin: 0 auto; 
+        padding: 10px 10px;   
+        font-size: 22px;
+        color: white;         
+    }    
+    header #Usuario:hover{            
+        color: #00A4C4;
+        border-bottom: 4px solid #F1A600;
+    }       
+    header #Usuario span:hover{
+        color: #00A4C4;
+    }      
+    #Busqueda :hover{
+        color: #00A4C4;
+        border-bottom: 4px solid #F1A600;
+    }  
+
+    /* ////////////////////////////////////////////////////////////////////////////////
+    //                             Productos Tienda                              //
+    ///////////////////////////////////////////////////////////////////////////////*/
+    .separation{  
+        position: relative;
+        text-align: center;         
+        margin-top: 50px;   
+        margin-bottom: 25px;      
+        height: 50px;
+        line-height: 50px; 
+        width: 80%;       
+        border-radius: 0px 25px 25px 0px;          
+        background: #2c4295;
+        color: white;
+    }   
+    .separationSumarry{     
+        margin-top: 20px;     
+        margin-left: 20%;
+        margin-bottom: 25px;  
+        height: 50px; 
+        width: 80%;          
+        line-height: 50px;      
+        border-radius: 25px 0px 0px 25px;  
+        position: relative;       
+        background: #2c4295;
+        text-align: center;  
+        color: white;
+        font-size: 22px;
+    }     
+    .separationResumen{  
+        position: relative;
+        text-align: center;         
+        margin-top: 25px;   
+        margin-bottom: 25px;      
+        height: 50px;
+        line-height: 50px; 
+        width: 80%;       
+        border-radius: 25px 25px 25px 25px;          
+        background: #2c4295;
+        color: white;
+    } 
+/*////////////////////////////////////////////////////////////////////////////////
+//                        Css Productos~~~!                                    //
+///////////////////////////////////////////////////////////////////////////////*/    
+    .row {              
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;              
+    }   
+    .col-4{            
+        background: white;   
+        border: 8px solid #f8f8f8f6;
+        flex-basis: 25%;
+        padding: 10px;        
+        min-width: 1px;       
+        transition: all 0.5s;  /* Para el hoover de mas abajo, pero no esta agarrando el transform, sin embargo el all funciono */ 
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .col-4 img {
+        width: 100%;
+    }    
+    .col-4 h4 {
+        color: black;
+        font-weight: normal;    
+    }    
+    .col-4 p {
+        color: black;
+        font-size: 16px;
+    }
+    .col-4:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 0.0001px solid #f8f8f8f6;       
+    }
+    .col-4 .Costo{         
+        position: relative; 
+        height: 30px;    
+        width: 100%;              
+    } 
+    .Costo >*{ 
+        position: absolute; 
+        margin-right: 2%;      
+        display: inline;
+        line-height: 30px;   
+    }     
+    .Costo :nth-child(2){  
+        color: #00A4C4;     
+        position: absolute;   
+        margin-left: 15%;
+    }      
+    .Costo :nth-child(3){
+        margin-left: 70%;           
+    }
+    .Costo :nth-child(4){
+        margin-left: 85%;   
+    }
+    .Costo .precio{
+        text-decoration: line-through ;
+    }   
+    .Costo .icon-favorite{   
+        color: #2c4295;
+    }     
+    .Costo .icon-ecommerce1{        
+        color: #2c4295;
+    }      
+    .col-4 .icon-ecommerce1:hover{
+        color: #00A4C4;        
+    }
+    .col-4 .icon-favorite:hover{
+        color:  #00A4C4;       
+    }   
+    #template-card .Costo :nth-child(1){
+        text-decoration: none;
+    }
+    #template-card .Costo :nth-child(2){
+        display: none;      
+    }
+    
+    #template-card .Costo :nth-child(4){
+        display: none;      
+    }
+/*////////////////////////////////////////////////////////////////////////////////
+//                              Apartado Productos                             //
+//////////////////////////////////////////////////////////////////////////////*/
+.template-carrito{
+    background: white;   
+    width: 80%;
+    height: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center;      
+}
+tr th img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #00A4C4;
+}
+table{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    border-collapse: separate;
+    table-layout: fixed;
+    width: 80%;
+    border-spacing: 0 5px; /* this is the ultimate fix */  
+    color: black;
+}
+table th{
+    text-align: left;
+    padding: 5px 15px;
+}
+table td{
+    border-width: 3px 0;
+    width: 50%;
+    border-color: #f8f8f8f6;
+    border-style: solid;
+    background-color: #f8f8f8f6;
+    color: black;
+    padding: 5px 15px;
+}
+table td:first-child {
+    border-left-width: 3px;
+    border-radius: 5px 0 0 5px;
+}
+  table td:last-child {
+    border-right-width: 3px;
+    border-radius: 0 5px 5px 0;
+}
+.botonPlus{
+    background: #00A4C4;
+    padding: 5px 3px 5px 3px;
+}
+.botonMenus{
+    background: red;
+    padding: 5px 5px 5px 5px;
+}
+#footerTable{
+    position: absolute;
+    color: red;
+}
+.template-footer{    
+    background: white;   
+    width: 80%;
+    height: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    margin-top: 45px;    
+}
+.itemsT{
+    width: 500px;
+    color: #00A4C4;
+    height: 200px;
+    background: #00A4C4;
+}
+.vaciarCarrito{
+    color: white;
+    background: rgb(184, 0, 0);
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+/*////////////////////////////////////////////////////////////////////////////////
+                                    Segundo Try                                 //
+///////////////////////////////////////////////////////////////////////////////*/
+
+.container{    
+    background: white;   
+    width: 80%;
+    height: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center;  
+}
+table{    
+    font-family: 'fontCofe';
+    font-size: 15px;
+    border-collapse: separate;
+    table-layout: fixed;
+    width: 80%;
+    border-spacing: 0 5px;
+    color: black;
+}
+
+
+    
+/*///////////////////////////////////////////////////////////////////////////////
+//                              Media Query's
+///////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 360px){    
+    body{
+      background: red; /*#f8f8f8f6*/
+  }  
+}
+@media screen and (min-width: 480px){    
+    body{
+      background: purple; /*#f8f8f8f6*/
+  }  
+}
+@media screen and (min-width: 600px){        
+  body{
+      background: pink; /*#f8f8f8f6*/
+    }   
+}
+@media screen and (min-width: 767px){        
+    body{
+        background: #f8f8f8f6; /*#f8f8f8f6*/
+    }   
+}
+
+@media screen and (min-width: 950px){        
+    body{
+        background: #f8f8f8f6; /**/
+    }   
+    .separation{
+        font-size: 22px;
+    }
+    .col-4 {
+        flex-basis: 25%;
+    }  
+}
+  

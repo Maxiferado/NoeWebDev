@@ -1,0 +1,18 @@
+.cambiocolor{
+    display: block;
+    position: relative;
+    padding: 12px 50px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    background: black;
+    color: white;    
+    transition: all 0.5s; 
+}
+.cambiocolor:hover{
+    background: grey;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(87, 87, 87);
+}
+body{
+    margin-left: 15%;
+}
